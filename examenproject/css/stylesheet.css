@@ -1,0 +1,230 @@
+body {
+    font-family: 'Catamaran', sans-serif;
+    background-color: deeppink;
+
+
+}
+* {
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    font-size: 5em;
+    color: white;
+    font-style: italic;
+
+
+}
+h2{
+    color: white;
+}
+/*nav gedeelte*/
+.nav-area ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav-area ul li {
+    width: 50%;
+}
+
+.nav-area ul li > ul {
+    display: none;
+    flex-direction: column;
+}
+
+.nav-area ul li > ul li {
+    width: 100%;
+}
+
+.nav-area ul li:hover > ul {
+    display: flex;
+}
+.nav-area a {
+    text-transform: uppercase;
+    display: block;
+    background: purple;
+    padding: 15px;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+
+}
+.nav-area a:hover{
+    background: lightblue;
+    color: #ffffff;
+}
+.nav-area .dropdown li > a{
+    background: #000000;
+    color: #ffffff;
+}
+.nav-area .dropdown li > a:hover{
+    background: lightblue;
+}
+.nav-area .dropdown > a:after{
+    content: '+';
+    padding-left: 5px;
+}
+.nav-area a.currentpage{
+    text-decoration: underline;
+    pointer-events: none;
+}
+
+/*verbergen van titels */
+.hiddenTitle {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    left: -100000px;
+    clip: rect(1px 1px 1px 1px);
+}
+
+/* grids? TODO */
+.grid_main {
+    grid-area: main;
+}
+.grid_header {
+    grid-area: header;
+}
+.grid{
+padding: 10px;
+}
+
+/*home css */
+main figure img{
+    max-width: 100%;
+    margin: auto;
+    height: auto;
+
+}
+main{
+    display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 5%;
+}
+main article {
+    display: flex;
+    flex-direction: column;
+}
+.containers{
+    border: solid white;
+    border-radius: 5px;
+    margin-top: 1em;
+    padding: 2%;
+}
+
+footer p {
+    margin: 2px;
+    text-align: center;
+}
+p {
+    color: white;
+}
+
+
+
+
+
+/* table */
+
+table{
+    border-radius: 3px;
+    border: solid white;
+    width: auto;
+
+}
+li > image{
+    max-width: 100%;
+    margin: auto;
+}
+
+
+/* TEST */
+
+.columns {
+    float: left;
+    width: 33.3%;
+    padding: 8px;
+}
+
+/* Style the list */
+.price {
+    list-style-type: none;
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+/* Add shadows on hover */
+.price:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+/* Pricing header */
+.price .header {
+    background-color: #111;
+    color: white;
+    font-size: 25px;
+}
+
+/* List items */
+.price li {
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Grey list item */
+.price .grey {
+    background-color: #eee;
+    font-size: 20px;
+}
+
+/* The "Sign Up" button */
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.tablePrijs{
+    display: flex;
+    flex-wrap: wrap;
+}
+.prijsImage{
+    height: auto;
+    max-width: 100%;
+}
+
+
+
+
+
+/* MEDIA */
+@media only screen and (max-width: 600px) {
+    .nav-area ul li{
+        width: 100%;
+    }
+    h1{
+        font-size: 3em;
+    }
+    main figure {
+        width: 100%;
+    }
+    .columns {
+        width: 100%;
+    }
+}
