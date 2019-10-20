@@ -28,7 +28,7 @@ h2{
 }
 
 .nav-area ul li {
-    width: 50%;
+    width: 16.3%;
 }
 
 .nav-area ul li > ul {
@@ -68,7 +68,7 @@ h2{
     content: '+';
     padding-left: 5px;
 }
-.nav-area a.currentpage{
+.nav-area a.currentpage {
     text-decoration: underline;
     pointer-events: none;
 }
@@ -101,6 +101,10 @@ main figure img{
     height: auto;
 
 }
+.homeFigure{
+    width: 300px;
+    height: 300px;
+}
 main{
     display: flex;
     margin-left: 5%;
@@ -126,6 +130,9 @@ footer p {
 }
 p {
     color: white;
+}
+footer{
+    margin-top: 5%;
 }
 
 
