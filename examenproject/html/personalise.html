@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Personaliseer</title>
     <link rel="stylesheet" href="../css/stylesheet.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
 <body>
@@ -32,34 +33,48 @@
     </section>
 
 </header>
-<main>
+<main class="grid grid_main">
     <h2 class="hiddenTitle">Main</h2>
     <fieldset>
         <legend>Personalisatie</legend>
-        <form method="post">
+        <form action="submit.html" method="post">
             <label for="naam">Voornaam </label>
             <input class="antwoord" required type="text" id="naam" name="naam"><br>
 
             <label for="achternaam">Geef je achternaam </label>
             <input class="antwoord" required type="text" id="achternaam" name="achternaam"><br>
 
-            <label for="schoenenGR" >Tekst voor Gravering (max 6 tekens) </label>
-            <input class="antwoord" required type="text" id="schoenenGR" name="naam" value="" maxlength = "6"><br>
+            <label for="boodschap" > Boodschap of naam op de poster (max 15 tekens) </label>
+            <input class="antwoord" required type="text" id="boodschap" name="naam" value="" maxlength = "15"><br>
 
-            <label for="schoenenGR">Logo voor gravering (max 1MB)</label>
-            <input type="file">
-            <input type="submit">
+            <label for="file">Eigen foto op de poster (max 1MB)</label>
+            <input class="antwoord" required type="file" id="file" name="file"> <br>
+
+            <label for="poster">Poster</label>
+
+            <select class="antwoord" required typeof="option" id="poster" name="Poster">
+                <option value="Avengers">Avengers</option>
+                <option value="Interstellar">Interstellar</option>
+                <option value="John Wick">John Wick</option>
+                <option value="Pirates of the Caribbean">Pirates of the Caribbean</option>
+                <option value="Toy Story">Toy story</option>
+                <option value="Star wars">Star Wars</option>
+            </select>
+            <input type="submit"><br>
+
         </form>
     </fieldset>
 
 </main>
-<aside>
+<aside class="grid grid_aside">
     <h2 class="hiddenTitle">Aside</h2>
 
 </aside>
-<footer>
-    <h2 class="hiddenTitle">Footer</h2>
-
+<footer class="grid grid_footer">
+    <h2 class="hiddenTitle">Contact informatie</h2>
+    <p>lance.taguba<code>@</code>student.kdg.be</p>
+    <p>Meir 20</p>
+    <p>Antwerpen</p>
 </footer>
 </body>
 </html>
