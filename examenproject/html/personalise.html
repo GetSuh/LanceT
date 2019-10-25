@@ -19,14 +19,14 @@
                 <li><a  href="#" class="currentpage">Personaliseer</a></li>
                 <li class="dropdown"><a href="product.html">Product</a>
                     <ul>
-                        <li><a href="../html/Producten/Films.html">Films</a></li>
-                        <li><a href="../html/Producten/Games.html">Games</a></li>
-                        <li><a href="../html/Producten/Anime.html">Anime</a></li>
-                        <li><a href="../html/Producten/Popculture.html">Pop culture</a></li>
+                        <li><a href="producten/films.html">Films</a></li>
+                        <li><a href="producten/games.html">Games</a></li>
+                        <li><a href="producten/anime.html">Anime</a></li>
+                        <li><a href="producten/popculture.html">Pop culture</a></li>
                     </ul>
                 </li>
                 <li><a href="../html/blog.html">Blog</a></li>
-                <li><a href="FAQ.html">FAQ</a></li>
+                <li><a href="faq.html">FAQ</a></li>
                 <li><a href="../html/contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -38,20 +38,26 @@
     <fieldset>
         <legend>Personalisatie</legend>
         <form action="submit.html" method="post">
-            <label for="naam">Voornaam </label>
+            <label for="naam">Voornaam </label> <br>
             <input class="antwoord" required type="text" id="naam" name="naam"><br>
 
-            <label for="achternaam">Geef je achternaam </label>
+            <label for="achternaam">Achternaam</label><br>
             <input class="antwoord" required type="text" id="achternaam" name="achternaam"><br>
 
-            <label for="boodschap" > Boodschap of naam op de poster (max 15 tekens) </label>
+            <label for="email">E-mail</label><br>
+            <input type="email" name="email" id="email"><br>
+
+            <label for="boodschap" > Boodschap of naam op de poster (max 15 tekens) </label><br>
             <input class="antwoord" required type="text" id="boodschap" name="naam" value="" maxlength = "15"><br>
 
-            <label for="file">Eigen foto op de poster (max 1MB)</label>
+            <label for="kleur">Kies je fontkleur</label> <br>
+            <input type="color" name="favcolor" value="#ff0000" id="kleur"><br>
+
+
+            <label for="file">Eigen foto op de poster (max 1MB)</label><br>
             <input class="antwoord" required type="file" id="file" name="file"> <br>
 
-            <label for="poster">Poster</label>
-
+            <label for="poster">Poster</label> <br>
             <select class="antwoord" required typeof="option" id="poster" name="Poster">
                 <option value="Avengers">Avengers</option>
                 <option value="Interstellar">Interstellar</option>
@@ -59,7 +65,7 @@
                 <option value="Pirates of the Caribbean">Pirates of the Caribbean</option>
                 <option value="Toy Story">Toy story</option>
                 <option value="Star wars">Star Wars</option>
-            </select>
+            </select> <br>
             <input type="submit"><br>
 
         </form>

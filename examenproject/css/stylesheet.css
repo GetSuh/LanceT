@@ -28,6 +28,7 @@ h2 {
 header {
     height: 100%;
 
+
 }
 
 /*nav gedeelte*/
@@ -46,14 +47,18 @@ header {
 .nav-area ul li > ul {
     display: none;
     flex-direction: column;
+    position: absolute;
 }
 
 .nav-area ul li > ul li {
     width: 100%;
+
 }
 
 .nav-area ul li:hover > ul {
     display: flex;
+
+
 }
 
 .nav-area a {
@@ -65,6 +70,7 @@ header {
     text-decoration: none;
     text-align: center;
 
+
 }
 
 .nav-area a:hover {
@@ -75,16 +81,22 @@ header {
 .nav-area .dropdown li > a {
     background: #000000;
     color: #ffffff;
+
+
 }
+.nav-area .dropdown {}
+
 
 .nav-area .dropdown li > a:hover {
     background: lightblue;
+
 }
 
 .nav-area .dropdown > a:after {
     content: '+';
     padding-left: 5px;
 }
+
 
 .nav-area a.currentpage {
     text-decoration: underline;
@@ -320,7 +332,9 @@ form{
     width: 100%;
     font-size: 2em;
 
-
+}
+#poster{
+    overflow: scroll;
 }
 /* MEDIA */
 @media only screen and (max-width: 600px) {
@@ -344,6 +358,11 @@ form{
     #sizetabel {
         max-width: 100%;
     }
+    .nav-area ul li > ul {
+        display: none;
+        flex-direction: column;
+        position: relative;
+    }
 
     td {
         font-size: small;
@@ -355,5 +374,4 @@ form{
         grid-gap: 1px;
 
     }
-
 }
